@@ -16,6 +16,12 @@ import {AlertHelper} from './app/utils/AlertHelper';
 import {PersistGate} from 'redux-persist/integration/react';
 import TabNavigationStack from './app/routing/TabNavigationStack';
 import {navigationTypeTabs} from './app.json';
+import Icon from 'react-native-vector-icons/Feather'; 
+import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+//FontAwesome5.loadFont()
+FontAwesome.loadFont()
+Icon.loadFont()
 const App: () => React$Node = () => {
   const {persistor, store} = storePre;
 
