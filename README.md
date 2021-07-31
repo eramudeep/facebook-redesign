@@ -1,4 +1,4 @@
-# react-native-redux-starter
+# facebook-redesign | React Native Facebok Clone
 A starter boilerplate for a mobile app using React Native and Redux.
 -[UI](https://dribbble.com/shots/15479224-Facebook-Redesign-Concept/attachments/7253134?mode=media)
 ## Requirements
