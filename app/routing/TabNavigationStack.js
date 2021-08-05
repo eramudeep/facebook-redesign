@@ -8,6 +8,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {RoutesList} from './routes';
 import {appColors} from '../utils/appColors';
+import { scale } from 'react-native-size-matters';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +19,9 @@ export default function TabNavigationStack() {
         tabBarOptions={{
           activeTintColor: appColors.primary,
           inactiveTintColor: appColors.secondary,
+          style:{ 
+            borderRadius:scale(14)
+          }
         }}>
         {RoutesList?.map((route, key) => {
           const {name, component, options} = route;

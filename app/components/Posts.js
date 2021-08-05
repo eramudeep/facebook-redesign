@@ -30,9 +30,9 @@ export default function Posts({posts}) {
         <View style={{flexDirection: 'row'}}>
           <Avatar image={profileImage} />
           <View style={{marginLeft: scale(10)}}>
-            <Label text={name} style={{left: -5}} />
+            <Label text={name} style={{left: -5, fontSize:scale(15), fontWeight:'700', color:appColors.darkBlue}} />
             <View style={{flexDirection: 'row'}}>
-              <FontAwesome name="globe" />
+              <FontAwesome name="globe" style={{opacity:0.6}} />
               <Label
                 text={location}
                 style={{fontSize: scale(9), marginLeft: scale(5)}}
@@ -127,7 +127,7 @@ export default function Posts({posts}) {
               justifyContent: 'space-between',
               alignItems: 'center',
             }}>
-            <Feather
+            <FontAwesome
               name="thumbs-up"
               size={scale(20)}
               color={appColors.darkBlue}
